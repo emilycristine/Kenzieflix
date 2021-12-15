@@ -23,6 +23,8 @@ time, mark, audio, video {
 :root {
 --color: white;
 --backgrounf: #00002E;
+--imagePx: 186px;
+--boxWidht: 858px;
 }
 
 body {
@@ -66,7 +68,7 @@ button{
 }
 
 /*PÁGINA INICIAL*/
-div.pg-home {
+.pg-home {
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
@@ -102,7 +104,6 @@ color: var(--color);
 
 .pg-home ul {
 	display: flex;
-	width: 186px;
 	flex-direction: row;
 	margin-bottom: 15px;
 	justify-content: center;
@@ -113,13 +114,26 @@ color: var(--color);
 	margin: 15px;
 	list-style-type: none;
 }
-
-@media screen and (min-width:400px){
-	.pg-home ul{ 
+@media only screen and (min-width: 300px){
+	.box{
 		width: 858px;
 	}
+	.pg-home ul{
+		max-width: 858px;
 	}
-
-
-
+	header h2{
+		font-size: 40px;
+	}
 	
+	}
+	@media only screen and (max-width: 700px){
+		.box{
+			width: 858px;
+		}
+		.pg-home ul{
+			max-width: 500px;
+		}
+		header.topo{
+			text-align: center;
+		}	
+	}
