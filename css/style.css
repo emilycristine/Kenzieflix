@@ -1,38 +1,125 @@
-/*
-Theme Name: KenzieFlix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
-:root{
-  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+		box-sizing: border-box;
 }
 
-/*BODY*/
-	body{
+:root {
+--color: white;
+--backgrounf: #00002E;
+}
 
+body {
+font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+background-color: var(--backgrounf);
+height: auto;
+width: auto;
+}
+
+header.topo {
+	margin-right: auto;
+}
+
+img {
+	max-width: 187px;
+}
+
+.box {
+	display: inline-flex;
+	justify-content: center;
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--color);
 	}
 
-/*TOPO*/
-	header.topo{
-		
-	}
+.perfil{
+	display: flex;
+	flex-direction: column;
+	width: 180px;
+}
 
 /*RODAPÉ*/
-	
+button{
+	color: var(--color);
+	background-color: var(--backgrounf);
+	border-radius: 3px;
+	margin: 40px;
+	width: 170px;
+	padding: 18px;
+	cursor: pointer;
+}
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+div.pg-home {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	
+}
+
+header h2 {
+	font-size: 65px;
+	font-weight: 700;
+	margin: 100px auto 30px auto;
+	color: var(--color);
+}
+
+
+h3{
+font-size: 18px;
+font-weight: 700;
+padding-top: 15px;
+margin: 10px auto 30px auto;
+color: var(--color);
+}
+
+.add{
+	font-size: 18px;
+	font-weight: 700;
+	padding-top: 80px;
+	margin: 10px auto 15px auto;
+	color: var(--color);
+}
+
+.pg-home ul {
+	display: flex;
+	width: 186px;
+	flex-direction: row;
+	margin-bottom: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+.pg-home ul li {
+	margin: 15px;
+	list-style-type: none;
+}
+
+@media screen and (min-width:400px){
+	.pg-home ul{ 
+		width: 858px;
 	}
+	}
+
+
+
+	
